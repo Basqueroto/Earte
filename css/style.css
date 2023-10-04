@@ -1,0 +1,157 @@
+:root {
+    --cor-branca: white;
+    --cor-preta: black;
+    --cor-rose: #EF476F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    /* font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Mono', monospace; */
+}
+
+#banner {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upper {
+    width: 93%;
+    height: calc(100vh - 10vh);
+    background-image: url("../img/image1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+#upper p {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.58) 87.5%, rgba(255, 255, 255, 0.00) 100%);
+    color: var(--cor-preta);
+    height: 100%;
+    width: 60%;
+    font-size: 80px;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* ------------------------------materiais-------------------------------- */
+#materiais {
+    overflow-x: hidden;
+}
+
+
+#title-m {
+    position: relative;
+    color: var(--cor-preta);
+    background-image: url("../img/titler-removebg-preview.png");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+#title-m p {
+    font-size: 80px;
+    margin-left: 100px;
+    color: var(--cor-branca);
+}
+
+#card {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.c-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.c-img img{
+    width: 80%;
+    height: 80%;
+    border: solid 8px var(--cor-rose);
+}
+
+.acima {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.65) 89.06%, rgba(255, 255, 255, 0.00) 100%);
+    width: calc(80% - 16px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.acima p {
+    font-size: 70px;
+}
+
+#techA {
+    opacity: 0;
+}
+
+#techA:hover {
+    opacity: 1;
+}
+
+#tintaA {
+    opacity: 0;
+}
+
+#tintaA:hover {
+    opacity: 1;
+}
+
+#pinA {
+    opacity: 0;
+}
+
+#pinA:hover {
+    opacity: 1;
+}
+
+/* -----------------------mona------------------------- */
+
+#mona {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/mona.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ------------------------ofertas -----------------------*/
+
+#ofTitle {
+    background-image: url("../img/verdeTitle-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+#ofTitle p{
+    font-size: 80px;
+    color: var(--cor-branca);
+    margin-left: 100px;
+}
