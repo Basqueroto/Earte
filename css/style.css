@@ -187,3 +187,50 @@
     width: 50px;
     position: absolute;
 }
+
+/* copiar apartir daqui */
+
+#grito {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/grito.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* obas dos usuários */
+
+#Otitle {
+    font-size: 80px;
+    height: 420px;
+    width: 100%;
+    color: var(--cor-branca);
+}
+
+#Otitle p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("../img/azulescuro.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.oimg {
+    position: relative;
+}
+
+.oimg img {
+    width: 100%;
+}
+
+#lisa {
+    width:  123.3%;
+}
+
+.oentre {
+    margin-bottom: 20px;
+}
