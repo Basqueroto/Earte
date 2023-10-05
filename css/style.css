@@ -10,6 +10,7 @@
     transition: 0.5s;
     /* font-family: 'Quicksand', sans-serif;
     font-family: 'Roboto Mono', monospace; */
+    overflow-x: hidden;
 }
 
 #banner {
@@ -20,6 +21,7 @@
 }
 
 #upper {
+    overflow: hidden;
     width: 93%;
     height: calc(100vh - 10vh);
     background-image: url("../img/image1.png");
@@ -141,17 +143,47 @@
 #ofTitle {
     background-image: url("../img/verdeTitle-removebg-preview.png");
     background-repeat: no-repeat;
-    background-size: cover;
 
     position: relative;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     height: 200px;
+    width: 85%;
+    margin-top: 60px;
+    margin-bottom: 120px;
+
+    background-size: contain;
 }
 
 #ofTitle p{
     font-size: 80px;
     color: var(--cor-branca);
     margin-left: 100px;
+}
+
+/* slider */
+
+.ofSlide {
+    margin-left: 5%;
+    height: 600px;
+}
+
+.ofs {
+    position: absolute;
+    width: 75%;
+    overflow: hidden;
+}
+
+.ofs img {
+    width: 100%;
+}
+
+#tw {
+    left: 85%;
+}
+
+.seta{
+    width: 50px;
+    position: absolute;
 }
