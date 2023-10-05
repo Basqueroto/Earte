@@ -202,6 +202,10 @@
 
 /* obas dos usuários */
 
+#obrasdearte {
+    margin-bottom: 50px;
+}
+
 #Otitle {
     font-size: 80px;
     height: 420px;
@@ -234,3 +238,34 @@
 .oentre {
     margin-bottom: 20px;
 }
+
+/* contemp-- */
+
+#contemp {
+    height: 100vh;
+
+    background-image: url("../img/conteporanea.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* tutoriais */
+
+#tutTitle {
+    height: 300px;
+}
+
+#tutTitle p {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-branca);
+
+    background-image: url("../img/amarelotitle.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 70px);
+}
+
