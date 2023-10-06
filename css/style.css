@@ -2,6 +2,7 @@
     --cor-branca: white;
     --cor-preta: black;
     --cor-rose: #EF476F;
+    --cor-azul-escuro: #073B4C;
 }
 
 * {
@@ -231,8 +232,17 @@
     width: 100%;
 }
 
+.oimg img:hover {
+    width: 109%;
+}
+
+
 #lisa {
     width:  123.3%;
+}
+
+#lisa:hover {
+    width:  132.3%;
 }
 
 .oentre {
@@ -253,6 +263,10 @@
 
 /* tutoriais */
 
+#tutoriais {
+    margin-bottom: 100px;
+}
+
 #tutTitle {
     height: 300px;
 }
@@ -269,3 +283,20 @@
     background-position: calc(50% + 70px);
 }
 
+.tut {
+    font-size: 50px;
+    color: var(--cor-azul-escuro);
+    margin-left: 40px;
+}
+
+.vi {
+    border-radius: 30px;
+    width: 90vw;
+}
+
+.vivi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
