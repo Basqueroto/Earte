@@ -9,13 +9,16 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
       
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kanit&family=Lato:wght@700&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Artistic</title>
 </head>
-<body>
+<body id="body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="img/logo-arte-removebg-preview (1) 1.png" alt="logo" style="width: 150px;">
@@ -26,16 +29,16 @@
         <div class="collapse navbar-collapse  my-2 my-lg-0" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Materiais</a>
+              <a class="nav-link" href="#materiais">Materiais</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ofertas</a>
+              <a class="nav-link" href="#ofertas">Ofertas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Galeria</a>
+              <a class="nav-link" href="#obrasdearte">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tutoriais</a>
+              <a class="nav-link" href="#tutoriais">Tutoriais</a>
             </li>
           </ul>
         </div>
@@ -43,30 +46,32 @@
     <main>
         <section id="banner">
             <div id="upper">
-                <p>Conheça a Artistic, uma loja com <b>tudo</b> para você <b>imaginar...</b></p>
+				<div id="pp">
+                	<p>Conheça a Artistic, uma loja com <b class="mFont">tudo</b> para você <b class="mFont">imaginar...</b></p>
+				</div>
             </div>
         </section>
         <section id="materiais" class="container-fluid">
-			<div class="row" id="title-m">
+			<div class="row backg" id="title-m">
 				<!-- <img src="img/titler-removebg-preview.png" alt=""> -->
 				<p>Materiais</p>
 			</div>
 			<div class="row d-flex justify-content-center" id="card">
 				<div class="col-md-4 card-m">
 					<div class="c-img">
-						<img src="img/tinta.png" alt="tintas" id="tintas">
+						<img src="img/tinta.png" alt="tintas" id="tintas" class="imgs">
 						<div class="acima" id="tintaA"><p>Tintas</p></div>
 					</div>
 				</div>
 				<div class="col-md-4 card-m">
 					<div class="c-img">
-						<img src="img/pincel.png" alt="pinceis" id="pinceis">
-						<div class="acima" id="pinA"><p>Pinceis</p></div>
+						<img src="img/pincel.png" alt="pinceis" id="pinceis" class="imgs">
+						<div class="acima" id="pinA"><p>Pincéis</p></div>
 					</div>
 				</div>
 				<div class="col-md-4 card-m">
 					<div class="c-img">
-						<img src="img/tec.png" alt="tecnologia" id="tech">
+						<img src="img/tec.png" alt="tecnologia" id="tech" class="imgs">
 						<div class="acima" id="techA"><p>Tech</p></div>
 					</div>
 				</div>
@@ -74,23 +79,90 @@
         </section>
 		<section id="mona"></section>
 		<section id="ofertas" class="container-fluid">
-			<div class="row" id="ofTitle">
+			<div class="row backg" id="ofTitle">
 				<p>Ofertas</p>
 			</div>
-                <div class="row ofSlide">
+                <div class="row ofSlide" id="slider">
                     <div class="col-md-9 ofs" id="on">
+						<div class="sobI">
+							<p class="sobT sobTx">Cavalete Pintor</p>
+							<p class="sobP sobTx">70% de Desconto</p>
+						</div>
                         <img src="img/cavalete.png" alt="cavalete">
                     </div>
                     <div class="col-md-9 ofs" id="tw">
+						<div class="sobI">
+							<p class="sobT sobTx">Cavalete Pintor</p>
+							<p class="sobP sobTx">70% de Desconto</p>
+						</div>
                         <img src="img/cavalete.png" alt="cavalete">
                     </div>
                 </div>
                 <div class="row" id="btns">
-                    <button><img src="img/esquerda.png" alt=""></button>
-                    <button><img src="img/direita.png" alt=""></button>
+                    <button id="esquerda"><img src="img/esquerda.png" alt=""></button>
+                    <button id="direita"><img src="img/direita.png" alt=""></button>
                 </div>
 		</section>
 
+    <section id="grito"></section>
+
+	<section id="obrasdearte">
+		<div class="row" id="Otitle">
+			<p class="backg">Obras</p>
+		</div>
+		<div class="container-fluid m-0 p-0">
+			<div class="row oentre">
+				<div class="col-md-8  oimg">
+					<img src="img/image 8.png" alt="">
+				</div>
+				<div class="col-md-4 oimg">
+					<img src="img/image 9.png" alt="" id="lisa">
+				</div>
+			</div>
+			<div class="row oentre">
+				<div class="col-md-4 oimg">
+					<img src="img/image 10.png" alt="">
+				</div>
+				<div class="col-md-8 oimg">
+					<img src="img/image 11.png" alt="">
+				</div>
+			</div>
+			<div class="row oentre">
+				<div class="col-md-5 oimg">
+					<img src="img/image 13.png" alt="">
+				</div>
+				<div class="col-md-7 oimg">
+					<img src="img/image 12.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contemp"></section>
+	<section id="tutoriais">
+		<div class="container-fluid">
+			<div class="row" id="tutTitle">
+				<p class="backg">Tutoriais</p>
+			</div>
+			<div class="row" id="pintar">
+				<div>
+					<p class="tut">Como pintar</p>
+				</div>
+				<div class="vivi">
+					<video class="vi" src="https://www.youtube.com/watch?v=RIHxwFU0gPI" controls></video>
+				</div>
+			</div>
+			<div class="row" id="esculpir">
+				<div>
+					<p class="tut">Como esculpir</p>
+				</div>
+				<div class="vivi">
+					<video class="vi" src="https://www.youtube.com/watch?v=izDhGzBKbfA" controls ></video>
+				</div>
+			</div>
+		</div>
+	</section>
+    
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
