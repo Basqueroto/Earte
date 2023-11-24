@@ -16,7 +16,6 @@
     overflow-x: hidden;
 }
 
-
 #banner {
     margin-top: 25px;
     display: flex;
@@ -180,7 +179,7 @@
 .ofSlide {
     position: relative;
     margin-left: 5%;
-    height: 600px;
+    /* height: 600px; */
 }
 
 .ofs {
@@ -211,16 +210,22 @@
     position: absolute;
     width: 60%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.58) 87.5%, rgba(255, 255, 255, 0.00) 100%);;
+    background: linear-gradient(90deg, rgb(71 58 58 / 50%) 87.5%, rgba(255, 255, 255, 0.00) 100%);
+    overflow-x: hidden;
+    border-radius: 20px;
+    color: var(--cor-branca);
 }
 
 .sobT {
-    font-size: 100px;
+    font-size: 8vw;
 }
 
 .sobP {
-    font-size: 80px;
-    color: var(--cor-azul-claro);
+    background-color: var(--cor-verde);
+    font-size: 3vw;
+    color: var(--cor-branca);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .sobTx {
@@ -234,13 +239,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
+    margin-bottom: 30px;
 }
 
 #btns button {
     background-color: var(--cor-verde);
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border: 1px solid var(--cor-branca);
     border-radius: 50px;
     display: flex;
@@ -250,7 +256,7 @@
 
 #btns button:hover {
     background-color: var(--cor-branca);
-    border: solid 2px var(--cor-verde);
+    /* border: solid 1px var(--cor-verde); */
 }
 
 #grito {
@@ -325,10 +331,6 @@
 
 /* tutoriais */
 
-#tutoriais {
-    margin-bottom: 100px;
-}
-
 #tutTitle {
     height: 300px;
 }
@@ -374,7 +376,7 @@
     height: 200px;
     width: 85%;
     margin-top: 60px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 
     background-size: contain;
 }
@@ -426,7 +428,7 @@
 /* obas dos usuários */
 
 #obrasdearte {
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 
 #Otitle {
@@ -484,10 +486,10 @@
 }
 
 /* tutoriais */
-
 #tutoriais {
-    margin-bottom: 100px;
+    padding-bottom: 90px;
 }
+
 
 #tutTitle {
     height: 300px;
@@ -507,8 +509,9 @@
 
 .tut {
     font-size: 50px;
-    color: var(--cor-azul-escuro);
+    color: var(--cor-branca);
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 .vi {
@@ -521,4 +524,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: var(--cor-branca);
+}
+
+#footLogo {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#footLogo img {
+    width: 20vw;
+    margin-left: 5vw;
 }
