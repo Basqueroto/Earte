@@ -10,7 +10,7 @@ var materiais = document.getElementById('materiais')
 var ofertas = document.getElementById('ofertas')
 var obrasdearte = document.getElementById('obrasdearte')
 var tutoriais = document.getElementById('tutoriais')
-var cont = 0
+var cont = 1
 var scr = 0
 var listaDeFontes = []
 
@@ -27,7 +27,13 @@ dirBtn.addEventListener('click', () => {
 
 esqBtn.addEventListener('click', () => {
     sliOne.style.left = '0px'
-    sliTwo.style.left = '85%'
+
+    if (window.screen.width > 900) {
+        sliTwo.style.left = '85%'
+    }
+    else {
+        sliTwo.style.left = '95%'
+    }
     slider.style.overflowX = 'hidden'
     console.log(sliOne.style.left)
     console.log(sliTwo.style.left)
@@ -39,13 +45,7 @@ esqBtn.addEventListener('click', () => {
 // font-family: 'Lobster', sans-serif;
 
 function mudarFonte () {
-    if (cont == 0) {
-        for(var i = 0; i < mFonts.length; i++) {
-            mFonts[i].style.fontFamily = "'Dancing Script', cursive"
-            // mFonts[i].style.color = '#ffffff'
-        }
-    }
-    else if (cont == 1) {
+    if (cont == 1) {
         for(var i = 0; i < mFonts.length; i++) {
             mFonts[i].style.fontFamily = "'Kanit', sans-serif"
             // mFonts[i].style.color = '#EF476F'
@@ -77,41 +77,23 @@ function mudarCor (){
     scr = document.documentElement.scrollTop
     console.log(scr)
 
-    if (scr > 6293) {
+    if (scr > 6493) {
         tutoriais.style.backgroundColor = '#FFD166'
-        
-
-        materiais.style.backgroundColor = '#ffffff'
-        ofertas.style.backgroundColor = '#ffffff'
-        obrasdearte.style.backgroundColor = '#ffffff'
-
-        backg[3].style.backgroundImage = 'none'
-        backg[0].style.backgroundImage = "url(img/titler-removebg-preview.png)"
-        backg[1].style.backgroundImage = "url(img/verdeTitle-removebg-preview.png)"
-        backg[2].style.backgroundImage = "url(img/azulescuro.png)"
-
     }
     else if (scr > 3730) {
         obrasdearte.style.backgroundColor = '#073B4C'
-
-        materiais.style.backgroundColor = '#ffffff'
-        ofertas.style.backgroundColor = '#ffffff'
         tutoriais.style.backgroundColor = '#ffffff'
 
         backg[2].style.backgroundImage = 'none'
-        backg[0].style.backgroundImage = "url(img/titler-removebg-preview.png)"
-        backg[1].style.backgroundImage = "url(img/verdeTitle-removebg-preview.png)"
         backg[3].style.backgroundImage = "url(img/amarelotitle.png)"
     }
     else if (scr > 2030) {
         ofertas.style.backgroundColor = '#06D6A0'
 
-        materiais.style.backgroundColor = '#ffffff'
         obrasdearte.style.backgroundColor = '#ffffff'
         tutoriais.style.backgroundColor = '#ffffff'
 
         backg[1].style.backgroundImage = 'none'
-        backg[0].style.backgroundImage = "url(img/titler-removebg-preview.png)"
         backg[2].style.backgroundImage = "url(img/azulescuro.png)"
         backg[3].style.backgroundImage = "url(img/amarelotitle.png)"
 
@@ -129,7 +111,7 @@ function mudarCor (){
         backg[0].style.backgroundImage = 'none'
         backg[1].style.backgroundImage = "url(img/verdeTitle-removebg-preview.png)"
         backg[2].style.backgroundImage = "url(img/azulescuro.png)"
-        backg[3].style.backgroundImage = "url(img/amarelotitle.png)"
+        backg[3].style.backgroundImage = "url(img/amarelotitle)"
 
         let imgs = document.getElementsByClassName('imgs')
 
@@ -142,7 +124,6 @@ function mudarCor (){
         backg[0].style.backgroundImage = "url(img/titler-removebg-preview.png)"
         backg[1].style.backgroundImage = "url(img/verdeTitle-removebg-preview.png)"
         backg[2].style.backgroundImage = "url(img/azulescuro.png)"
-        backg[3].style.backgroundImage = "url(img/amarelotitle.png)"
         materiais.style.backgroundColor = '#ffffff'
 
         for (let i = 0; i < imgs.length; i++){
